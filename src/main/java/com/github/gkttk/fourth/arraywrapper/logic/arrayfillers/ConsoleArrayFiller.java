@@ -1,6 +1,6 @@
 package com.github.gkttk.fourth.arraywrapper.logic.arrayfillers;
 
-import com.github.gkttk.fourth.arraywrapper.model.Array;
+import com.github.gkttk.fourth.arraywrapper.model.ArrayWrapper;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class ConsoleArrayFiller implements ArrayFiller {
 
     @Override
-    public void fillArray(Array arrayWrapper) {
+    public void fillArray(ArrayWrapper arrayWrapper) {
         int arraySize = arrayWrapper.getSize();
         try (Scanner scanner = new Scanner(System.in)) {
             for (int i = 0; i < arraySize; i++) {

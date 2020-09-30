@@ -1,6 +1,6 @@
 package com.github.gkttk.fourth.arraywrapper.logic.arrayfillers;
 
-import com.github.gkttk.fourth.arraywrapper.model.Array;
+import com.github.gkttk.fourth.arraywrapper.model.ArrayWrapper;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -18,7 +18,7 @@ public class FileArrayFiller implements ArrayFiller {
     }
 
     @Override
-    public void fillArray(Array arrayWrapper) {
+    public void fillArray(ArrayWrapper arrayWrapper) {
         int arraySize = arrayWrapper.getSize();
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(fileLocation))) {
             String lineOfNumbers = bufferedReader.readLine();

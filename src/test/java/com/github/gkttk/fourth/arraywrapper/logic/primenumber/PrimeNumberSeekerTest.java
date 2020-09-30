@@ -1,7 +1,6 @@
-package com.github.gkttk.fourth.arraywrapper;
+package com.github.gkttk.fourth.arraywrapper.logic.primenumber;
 
-import com.github.gkttk.fourth.arraywrapper.logic.simplenumber.PrimeNumberSeeker;
-import com.github.gkttk.fourth.arraywrapper.model.Array;
+import com.github.gkttk.fourth.arraywrapper.model.ArrayWrapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +15,7 @@ public class PrimeNumberSeekerTest {
     public void testFinePrimeNumbersShouldReturnThreePrimeNumbersFromArray() {
         //given
         int[] testArray = {1, 2, 3, 4, 5, 6};
-        Array arrayWrapper = new Array(testArray);
+        ArrayWrapper arrayWrapper = new ArrayWrapper(testArray);
         List<Integer> expectedPrimeNumbers = Arrays.asList(2, 3, 5);
         //when
         List<Integer> primeNumbersFromArrays = primeNumberSeeker.findPrimeNumbers(arrayWrapper);

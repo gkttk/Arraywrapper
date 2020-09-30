@@ -1,8 +1,8 @@
-package com.github.gkttk.fourth.arraywrapper;
+package com.github.gkttk.fourth.arraywrapper.logic.arrayfilters;
 
 import com.github.gkttk.fourth.arraywrapper.logic.arrayfillers.ArrayFiller;
 import com.github.gkttk.fourth.arraywrapper.logic.arrayfillers.ConsoleArrayFiller;
-import com.github.gkttk.fourth.arraywrapper.model.Array;
+import com.github.gkttk.fourth.arraywrapper.model.ArrayWrapper;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
-public class ConsoleArrayFillerTest {
+public class ConsoleArrayWrapperFillerTest {
 
     private static InputStream defaultIn = System.in;
     private static ByteArrayInputStream newIn;
@@ -27,12 +27,12 @@ public class ConsoleArrayFillerTest {
     @Test
     public void testFillArrayShouldFillArrayFromConsole() {
         //given
-        Array array = new Array(5);
-        Array expectedArray = new Array(new int[]{5, 4, 3, 2, 1});
+        ArrayWrapper arrayWrapper = new ArrayWrapper(5);
+        ArrayWrapper expectedArrayWrapper = new ArrayWrapper(new int[]{5, 4, 3, 2, 1});
         //when
-        consoleArrayFiller.fillArray(array);
+        consoleArrayFiller.fillArray(arrayWrapper);
         //then
-        Assertions.assertEquals(expectedArray, array);
+        Assertions.assertEquals(expectedArrayWrapper, arrayWrapper);
     }
 
     @AfterAll

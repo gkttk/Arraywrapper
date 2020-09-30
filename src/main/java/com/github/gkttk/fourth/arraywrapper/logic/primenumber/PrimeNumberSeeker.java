@@ -1,6 +1,6 @@
-package com.github.gkttk.fourth.arraywrapper.logic.simplenumber;
+package com.github.gkttk.fourth.arraywrapper.logic.primenumber;
 
-import com.github.gkttk.fourth.arraywrapper.model.Array;
+import com.github.gkttk.fourth.arraywrapper.model.ArrayWrapper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class PrimeNumberSeeker {
 
-    public List<Integer> findPrimeNumbers(Array arrayWrapper) {
+    public List<Integer> findPrimeNumbers(ArrayWrapper arrayWrapper) {
         List<Integer> primeNumbers = new ArrayList<>();
         int arraySize = arrayWrapper.getSize();
         for (int i = 0; i < arraySize; i++) {

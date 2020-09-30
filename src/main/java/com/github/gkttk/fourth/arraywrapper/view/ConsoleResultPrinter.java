@@ -1,7 +1,7 @@
 package com.github.gkttk.fourth.arraywrapper.view;
 
 
-import com.github.gkttk.fourth.arraywrapper.model.Array;
+import com.github.gkttk.fourth.arraywrapper.model.ArrayWrapper;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import java.util.List;
 public class ConsoleResultPrinter implements ResultPrinter {
 
     @Override
-    public void print(Array arrayWrapper, List<Integer> primeNumbers) {
+    public void print(ArrayWrapper arrayWrapper, List<Integer> primeNumbers) {
         System.out.print("Array: ");
         System.out.println(arrayWrapper.toString());
         System.out.print("Prime numbers in the array: ");

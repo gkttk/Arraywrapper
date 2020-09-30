@@ -1,6 +1,6 @@
 package com.github.gkttk.fourth.arraywrapper.logic.arrayfillers;
 
-import com.github.gkttk.fourth.arraywrapper.model.Array;
+import com.github.gkttk.fourth.arraywrapper.model.ArrayWrapper;
 
 import java.util.Random;
 
@@ -19,7 +19,7 @@ public class RandomNumberArrayFiller implements ArrayFiller {
     }
 
     @Override
-    public void fillArray(Array arrayWrapper) {
+    public void fillArray(ArrayWrapper arrayWrapper) {
         int arraySize = arrayWrapper.getSize();
         for (int i = 0; i < arraySize; i++) {
             int number = randomGenerator.nextInt(upperBound + 1);

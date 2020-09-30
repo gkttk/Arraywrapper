@@ -1,11 +1,11 @@
 package com.github.gkttk.fourth.arraywrapper.logic.sorting;
 
-import com.github.gkttk.fourth.arraywrapper.model.Array;
+import com.github.gkttk.fourth.arraywrapper.model.ArrayWrapper;
 
 /**
  * Common interface for array sorters.
  */
 public interface ArraySorter {
 
-    void sortArray(Array arrayWrapper);
+    void sortArray(ArrayWrapper arrayWrapper);
 }
